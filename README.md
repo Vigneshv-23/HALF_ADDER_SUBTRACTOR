@@ -61,7 +61,8 @@ assign f = (x1 & ~x2) | (x2 &~x1 );
 endmodule
 ```
 
-Developed by: vigesnRegisterNumber:*/
+Developed by: vignesh 
+RegisterNumber:212223110062
 
 ### RTL Schematic
 ![image](https://github.com/Vigneshv-23/HALF_ADDER_SUBTRACTOR/assets/110780412/4c151ac8-8cb8-485c-9b05-5ae70d0e223f)
