@@ -69,7 +69,8 @@ RegisterNumber:212223110062
 
 
 ### Output/TIMING Waveform
-![image](https://github.com/Vigneshv-23/HALF_ADDER_SUBTRACTOR/assets/110780412/47266241-3f7d-4b64-ac14-df7501fc9cda)
+![image](https://github.com/Vigneshv-23/HALF_ADDER_SUBTRACTOR/assets/110780412/db493af4-99e6-439d-a239-c2e4e17c5c52)
+
 
 
 ## Result:
