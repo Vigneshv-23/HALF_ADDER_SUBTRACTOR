@@ -53,23 +53,27 @@ Figure -02 HALF Subtractor
 
 **Program:**
 ```
-module fulladder(x1,x2,f);
-input x1,x2;
-output f;
-assign f = (x1 & ~x2) | (x2 &~x1 );
-
-endmodule
+module hafs(a,b,cy,sa,df,bo);
+input a,b;
+output cy,sa,df,bo;
+xor(sa,a,b);
+and(cy,a,b);
+xor(df,a,b);
+and(bo,~a,b);
+endmodule	
 ```
 
 Developed by: vignesh 
 RegisterNumber:212223110062
 
 ### RTL Schematic
-![image](https://github.com/Vigneshv-23/HALF_ADDER_SUBTRACTOR/assets/110780412/4c151ac8-8cb8-485c-9b05-5ae70d0e223f)
+
+![image](https://github.com/Vigneshv-23/HALF_ADDER_SUBTRACTOR/assets/110780412/1b86f054-43a1-43f8-8e22-de456a8764de)
 
 
 ### Output/TIMING Waveform
-![image](https://github.com/Vigneshv-23/HALF_ADDER_SUBTRACTOR/assets/110780412/db493af4-99e6-439d-a239-c2e4e17c5c52)
+![image](https://github.com/Vigneshv-23/HALF_ADDER_SUBTRACTOR/assets/110780412/f70a0db3-cc11-4812-bab8-8e825c860fcb)
+
 
 
 
