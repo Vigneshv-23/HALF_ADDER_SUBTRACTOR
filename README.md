@@ -51,16 +51,23 @@ Figure -02 HALF Subtractor
 5.	For different input combinations generate the timing diagram.
 
 
-**Program:**
+**HALF ADDEER**
 ```
-module hafs(a,b,cy,sa,df,bo);
+module half_adder(a,b,sum,carry);
 input a,b;
-output cy,sa,df,bo;
-xor(sa,a,b);
-and(cy,a,b);
-xor(df,a,b);
-and(bo,~a,b);
-endmodule	
+output sum,carry; 
+assign sum = a^b;
+assign carry = a & b;
+endmodule
+```
+### HALF SUBRACTOR
+```
+module halfsub_top(a,b,D,Bo);
+input a,b;
+output D,Bo; // Outputs sum and carry for half adder:Outputs difference D,Borrow Bo for half subtractor
+assign D = a ^ b;
+  assign Bo = ~a & b;
+endmodule
 ```
 
 Developed by: vignesh 
@@ -68,11 +75,15 @@ RegisterNumber:212223110062
 
 ### RTL Schematic
 
-![image](https://github.com/Vigneshv-23/HALF_ADDER_SUBTRACTOR/assets/110780412/1b86f054-43a1-43f8-8e22-de456a8764de)
+![image](https://github.com/Vigneshv-23/HALF_ADDER_SUBTRACTOR/assets/110780412/6e4ca485-9d1b-4a26-85be-8fe38a0958e5)
+
 
 
 ### Output/TIMING Waveform
-![image](https://github.com/Vigneshv-23/HALF_ADDER_SUBTRACTOR/assets/110780412/f70a0db3-cc11-4812-bab8-8e825c860fcb)
+![image](https://github.com/Vigneshv-23/HALF_ADDER_SUBTRACTOR/assets/110780412/03474385-fa97-485c-a61a-7cb6308f2043)
+![image](https://github.com/Vigneshv-23/HALF_ADDER_SUBTRACTOR/assets/110780412/d506b236-c009-4036-b175-4927b3535334)
+
+
 
 
 
